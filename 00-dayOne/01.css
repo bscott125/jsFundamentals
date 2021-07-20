@@ -1,0 +1,32 @@
+#first {
+	color: lightgreen;
+	text-align: center;
+}
+
+.headings {
+	color: blue;
+	border-radius: 25px;
+	background-color: gray;
+}
+
+.descriptions {
+	color: red;
+}
+
+div {
+	border: black;
+	border-width: 25px;
+	border-style: solid;
+	border-radius: 25px;
+	background: gray
+}
+
+.first, .second, .third {
+	border-radius: 25px;
+	background-color: grey;
+	text-align: center;
+}
+
+.prompts {
+	display: flex;
+}
