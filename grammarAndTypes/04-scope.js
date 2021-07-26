@@ -46,3 +46,7 @@ Var and Let seem to function the same way, but while they do have a lot of the s
    -var is scoped to the nearest function block
 	 -let is scoped to the nearest enclosing block
 */
+
+function whatDoesItDo(val) {
+	return val ? 1 : 2;
+};

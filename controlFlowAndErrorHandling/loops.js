@@ -151,7 +151,7 @@ console.log(propCase);
 
 
 /*
-  FOR A LOOP
+  FOR OF LOOP
 
 	In order to run a for of loop, the 'thing' must be numbered like an array
 */
@@ -187,4 +187,38 @@ for(let pos of indexArray){
 		if(worker === 'Dwight' || worker === 'Michael'){
 		console.log(worker, 'works in the office');
 	}
+}
+
+
+/* 
+CHALLENGE
+
+Write a for loop that counts from 1 to 100
+   -for numbers that are evenly divisable by 3, print: 'FIZZ'
+	 -for numbers that are evenly divisable by 5, print: 'BUZZ'
+	 -for numbers that are evenly divisable by BOTH 3 and 5, print: 'FIZZ BUZZ'
+
+reminder: a number is evenly divisable by another number when the remainder is 0
+*/
+
+for(let i = 0; i <= 100; i++){
+	console.log(i);
+   if(i % 3 == 0)
+		 console.log('FIZZ');
+	 if(i % 5 == 0)
+	 console.log('BUZZ');
+} 
+
+//or Jerome's way
+
+for(let i = 1; i <= 100; i++){
+	if(i % 15 == 0){
+		console.log("FIZZ BUZZ")
+} else if(i % 3 == 0){
+	console.log('FIZZ')
+} else if(i % 5 == 0){
+	console.log('BUZZ')
+} else {
+	console.log(i)
+}
 }
