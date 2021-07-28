@@ -58,14 +58,36 @@ console.log(document.getElementById('spanTest').innerHTML);
 
 
 // ! addEventListener()
+ document.getElementById('clickThis').addEventListener('click', function(event) {
+ 	// now I can write code
+ 	console.log(event.target);
+ 	event.target.style.backgroundColor = '#031bf3'   
+ })
 
-document.getElementById('clickThis').addEventListener('click', function(event) {
-	// now I can write code
-	console.log(event.target);
-	event.target.style.backgroundColor = '#031bf3'   
+//CHALLENGE Move the button into a varible, and when you click the button it will turn blue
+// or if it is already blue, it will turn red.
+// 1. Move the button into a varible
+// 2. Click it, and it will turn blue
+// 3. if it is blue, turn red
+
+let button = document.getElementById('clickThis');
+
+button.addEventListener('click',  ev =>{
+	console.log(ev.target.style.backgroundColor);
+	if(ev.target.style.backgroundColor == 'blue'){
+	 ev.target.style.backgroundColor = 'red'
+  } else {
+		ev.target.style.backgroundColor = 'blue';
+	}
 })
+//another way would be
+if(ev.target.style.backgroundColor !== 'blue'){
+	ev.target.style.backgroundColor = 'blue'
+ } else {
+	 ev.target.style.backgroundColor = 'red'; //not !==
+ }
 
-
+ 
 // ! addEventListener - keyup
 
 let input = document.getElementById('nameInput');
