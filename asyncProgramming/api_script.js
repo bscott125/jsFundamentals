@@ -7,7 +7,7 @@ searchForm.addEventListener('submit', fetchSpace)
 
 /* HOISTING MINI LESSON 
   JS will compile code reading from top to bottom, BUT it actually reads code twice. The first time it reads code,
-	it will stor anything in memory such as: varible names, functions (when using the key word)
+	it will store anything in memory such as: varible names, functions (when using the key word)
 */
 
 function fetchSpace(e){
